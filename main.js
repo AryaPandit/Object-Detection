@@ -18,14 +18,14 @@ function setup() {
 
 function draw() {
     image(video, 0, 0, 380, 380);
-  
+                      
         if(status != "")
         {
           r = random(255);
           g = random(255);
           b = random(255);
           objectDetector.detect(video, gotResult);
-          for (1 = 0; 1 < objects.length; i++)
+          for (i = 0; i < objects.length; i++)
           {
             document.getElementById("status").innerHTML = "Status : Object Detected";
             document.getElementById("number_of_objects").innerHTML = "Number of objects detected are : "+ objects.length;
